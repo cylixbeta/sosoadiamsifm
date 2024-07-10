@@ -202,7 +202,7 @@ function SesionGuest()
 end;
 
 function VerifyToken(Token)
-	local Url = 'https://beta.character.ai/chat/characters/recent/'
+	local Url = 'https://old.character.ai/chat/characters/recent/'
 
 	local Respuesta = CharacterAI:HTTPRequest(Url, 'GET', nil, true)
 	if (Respuesta['Status'] == false) then
